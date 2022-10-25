@@ -2,7 +2,7 @@
 import paho.mqtt.client as mqttclient
 import time 
 
-def on_connect(client,userdata,flags,rc):
+def on_connect(client,userdata,rc):
     if rc==0:
         print("client is connected")
         global connected
